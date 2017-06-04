@@ -41,20 +41,11 @@ html, body {
 }
 
 .content {
-  background: url('../../img/xv.png') repeat;
+  background: url('../../img/furley_bg.png') repeat;
   padding-top: 1vh;
   height: auto;
 
-  @media (min-width: @laptop-width) {
-    margin-left: @sidebar-width;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-  }
+  .fix-position-sidebar;
 }
 
 .card {
@@ -63,7 +54,6 @@ html, body {
 
   width: 90vw;
   height: 60vw;
-
   @media (min-width: @laptop-width) {
     width: 70vw;
     height: 40vw;
@@ -78,5 +68,19 @@ html, body {
   height: 20%;
 }
 
-
+.blog-post {
+  .fix-position-sidebar;
+}
 // helpers
+.fix-position-sidebar {
+  @media (min-width: @laptop-width) {
+    margin-left: @sidebar-width;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+}
