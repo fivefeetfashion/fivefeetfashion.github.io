@@ -1,0 +1,1 @@
+.container-fluid{padding:0}.sidebar{background:url('../../img/tweed.png') repeat}@media (min-width:900px){.sidebar{position:fixed;top:0;bottom:0;width:250px}}.sidebar .brand-title{color:#467082}.content{min-height:100vh}@media (min-width:900px){.content{width:75%;margin-left:250px}}

@@ -1,0 +1,33 @@
+// colors
+@white: #ffffff;
+@black: #000000;
+@primary: #467082;
+@secondary: #950b5e;
+@base: #d8d8d8;
+
+.container-fluid {
+  padding: 0;
+}
+
+.sidebar {
+  background: url('../../img/tweed.png') repeat;
+
+  @media (min-width: 900px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+  }
+
+  .brand-title {
+    color: @primary;
+  }
+}
+
+.content {
+  min-height: 100vh;
+  @media (min-width: 900px) {
+    width: 75%;
+    margin-left: 250px;
+  }
+}
