@@ -6,9 +6,7 @@
 @base: #d8d8d8;
 
 //widths
-@tablet-width: 600px;
 @laptop-width: 1025px;
-@desktop-width: 1920px;
 @sidebar-width: 250px;
 
 html, body {
@@ -60,30 +58,15 @@ html, body {
 }
 
 .card {
-  margin: 10vh auto;
+  margin: 5vh auto;
   background: @white;
 
-  width: 300px;
-  height: 200px;
-  @media (min-width: 450px) {
-    width: 440px;
-    height: 300px;
-  }
-  @media (min-width: 600px) {
-    width: 550px;
-    height: 400px;
-  }
-  @media (min-width: 900px) {
-    width: 700px;
-    height: 520px;
-  }
-  @media (min-width: 1200px) {
-    width: 900px;
-    height: 600px;
-  }
-  @media (min-width: 1500px) {
-    width: 1200px;
-    height: 800px;
+  width: 90vw;
+  height: 60vw;
+
+  @media (min-width: @laptop-width) {
+    width: 70vw;
+    height: 40vw;
   }
 }
 .card-thumbnail {
