@@ -8,6 +8,7 @@
 //widths
 @laptop-width: 1025px;
 @sidebar-width: 250px;
+@sidebar-height: 30vh;
 
 @card-border-radius: 5px;
 
@@ -26,7 +27,7 @@ html, body {
 
 .sidebar {
   background: url('../../img/tweed.png') repeat;
-  height: 30vh;
+  height: @sidebar-height;
 
   @media (min-width: @laptop-width) {
     position: fixed;
@@ -44,10 +45,12 @@ html, body {
 
 .content {
   background: url('../../img/furley_bg.png') repeat;
-  padding-top: 1vh;
   height: auto;
-
   .fix-position-sidebar;
+
+  .wrapper {
+      .pad-bottom(5vh);
+  }
 }
 
 .card {
@@ -75,10 +78,57 @@ html, body {
   height: 20%;
 }
 
+//blog-post
 .blog-post {
   background: @secondary;
   .fix-position-sidebar;
+
+  .wrapper {
+      .pad-bottom(20vh);
+  }
+  @media (max-width: 1024px) {
+    position: relative;
+  }
 }
+
+.close-button {
+
+  .items-middle;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.40);
+  color: @white;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  @media (max-width: 1024px) {
+    top: (@sidebar-height + 10px);
+    .close-button-absolute;
+  }
+  @media (min-width: 1025px) {
+    .close-button-fixed;
+  }
+}
+
+.close-button-fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.close-button-absolute {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.post {
+  height: 110vh;
+}
+
 // helpers
 .fix-position-sidebar {
   @media (min-width: @laptop-width) {
@@ -95,4 +145,22 @@ html, body {
 
 .hide {
   display: none;
+}
+
+.pad-bottom(@pad) {
+  padding-bottom: @pad;
+}
+
+.items-middle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  padding-top: 10px;
 }
