@@ -32,6 +32,10 @@ html, body {
   background: #222;
   height: @sidebar-height;
 
+  .flex-container;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
   @media (min-width: @laptop-width) {
     position: fixed;
     top: 0;
@@ -44,11 +48,13 @@ html, body {
 
 .logo {
   background: white;
-  margin-left: 1.5vh;
   width: 23vh;
+  align-self: flex-start;
+  margin-left: 1vh;
 
   @media (min-width: @laptop-width) {
-    margin: 40px auto;
+    align-self: flex-start;
+    margin: 40px 0;;
     width: 70%;
   }
 
@@ -244,5 +250,14 @@ html, body {
   width: 90vw;
   @media (min-width: @laptop-width) {
     width: 65vw;
+  }
+}
+
+.flex-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  @media (min-width: @laptop-width) {
+    flex-direction: row;
   }
 }
