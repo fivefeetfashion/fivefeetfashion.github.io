@@ -38,7 +38,23 @@ html, body {
     bottom: 0;
     width: @sidebar-width;
     height: auto;
+    min-height: 100vh;
+  }
+}
 
+.logo {
+  background: white;
+  margin-left: 1.5vh;
+  width: 23vh;
+
+  @media (min-width: @laptop-width) {
+    margin: 40px auto;
+    width: 70%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -63,7 +79,7 @@ html, body {
 .card-thumbnail {
   height: 60vw;
   @media (min-width: @laptop-width) {
-    height: 40vw;
+    height: 30vw;
   }
   .card-width;
 
@@ -227,6 +243,6 @@ html, body {
 .card-width {
   width: 90vw;
   @media (min-width: @laptop-width) {
-    width: 70vw;
+    width: 65vw;
   }
 }
