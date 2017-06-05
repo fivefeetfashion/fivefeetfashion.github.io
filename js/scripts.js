@@ -14,6 +14,10 @@ $(document).ready(function() {
     }
   });
 
+  if (/Mobi/i.test(navigator.userAgent) || /Anroid/i.test(navigator.userAgent)) {
+    // mobile!
+    $('.card span').css({"color": "hsla(340, 82%, 52%, 1)"})
+  }
 });
 
 // attaches close button to the top when scrolling
