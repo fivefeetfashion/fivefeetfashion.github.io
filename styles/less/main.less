@@ -1,7 +1,7 @@
 // colors
 @white: #eeeeee;
 @black: #000000;
-@primary: #467082;
+@primary: hsla(340, 82%, 52%, 1);
 @secondary: #950b5e;
 @base: #d8d8d8;
 
@@ -88,7 +88,7 @@ html, body {
       //   color: rgba(0, 0, 0, 1);
       // }
       span {
-        color: hsla(340, 82%, 52%, 1);
+        .primary-color(0.8);
       }
     }
   }
@@ -118,14 +118,14 @@ html, body {
   .card-width;
   text-align: left;
   h2 {
-    color: rgba(0, 0, 0, .8);
-    .font-settings(400, 2.3em, 1.5px, 1.1em);
-    @media (min-width: 1024px) {
-      .font-settings(400, 2.3em, 1.5px, 1.5em);
+    .primary-color(0.8);
+    .font-settings(500, 2.3em, 1.5px, 1.1em);
+    @media (min-width: @laptop-width) {
+      .font-settings(600, 2.3em, 1.5px, 1.5em);
     }
   }
   h4 {
-    color: rgba(0, 0, 0, .6);
+    .secondary-color(0.6);
     .font-settings(300, 1.1em, 1px, 1.4em);
 
     @media (min-width: @laptop-width) {
@@ -133,9 +133,9 @@ html, body {
     }
   }
   span {
-    color: hsla(340, 82%, 52%, 0.5);
+    .primary-color(0.5);
     @media (min-width: @laptop-width) {
-      color: hsla(340, 82%, 52%, 0.5);
+      .primary-color(0.4);
     }
   }
 }
@@ -192,10 +192,11 @@ html, body {
   min-height: 100vh;
   width: 90%;
   p {
-    color: rgba(0, 0, 0, 0.75);
+    .secondary-color(.75);
     // color: hsla(246, 68%, 26%, 0.8);
     .font-settings(400, 1.2em, 1.5px, 2em);
   }
+
   @media (min-width: @laptop-width) {
     p {
       .font-settings(400, 1.5em, 1.5px, 2em);
@@ -277,4 +278,12 @@ html, body {
   @media (min-width: @laptop-width) {
     flex-direction: row;
   }
+}
+
+.primary-color(@alpha) {
+  color: hsla(340, 82%, 52%, @alpha);
+}
+
+.secondary-color(@alpha) {
+  color: hsla(0, 0%, 0%, @alpha);
 }
