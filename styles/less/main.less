@@ -80,14 +80,14 @@ html, body {
 
 //blog-post
 .blog-post {
-  background: #eee;
+  background: @white;
   .fix-position-sidebar;
 
   .wrapper {
       .pad-bottom(20vh);
   }
   @media (max-width: 1024px) {
-    position: relative;
+    .relative-position;
   }
 }
 
@@ -163,4 +163,8 @@ html, body {
 
 .wrapper {
   padding-top: 10px;
+}
+
+.relative-position {
+  position: relative;
 }
