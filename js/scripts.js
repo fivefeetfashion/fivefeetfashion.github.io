@@ -15,7 +15,7 @@ $(document).ready(function() {
       $('#blog-post').removeClass('relative-position')
     }
   });
-  
+
 });
 
 // attaches close button to the top when scrolling
@@ -31,3 +31,15 @@ attachCloseToTop = function() {
     }
   }
 };
+
+//switch between blig list and blog post
+$('.card').click(function() {
+  // console.log($(this).attr('id'));
+  $('.content').addClass('hide');
+  $('.blog-post').removeClass('hide');
+});
+
+$('.close-button').click(function() {
+  $('.content').removeClass('hide');
+  $('.blog-post').addClass('hide');
+});
