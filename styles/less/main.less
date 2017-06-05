@@ -1,5 +1,5 @@
 // colors
-@white: #ffffff;
+@white: #eeeeee;
 @black: #000000;
 @primary: #467082;
 @secondary: #950b5e;
@@ -10,7 +10,7 @@
 @sidebar-width: 250px;
 @sidebar-height: 30vh;
 
-@card-border-radius: 5px;
+@border-radius: 5px;
 
 html, body {
   margin: 0;
@@ -54,7 +54,7 @@ html, body {
 }
 
 .card {
-  border-radius: @card-border-radius;
+  border-radius: @border-radius;
   margin: 5vh auto;
   background: @white;
 
@@ -66,21 +66,21 @@ html, body {
   }
 }
 .card-thumbnail {
-  border-top-left-radius: @card-border-radius;
-  border-top-right-radius: @card-border-radius;
+  border-top-left-radius: @border-radius;
+  border-top-right-radius: @border-radius;
   background: @secondary;
   height: 80%;
 }
 .card-title {
-  border-bottom-left-radius: @card-border-radius;
-  border-bottom-right-radius: @card-border-radius;
+  border-bottom-left-radius: @border-radius;
+  border-bottom-right-radius: @border-radius;
   background: @primary;
   height: 20%;
 }
 
 //blog-post
 .blog-post {
-  background: @secondary;
+  background: #eee;
   .fix-position-sidebar;
 
   .wrapper {
@@ -92,16 +92,16 @@ html, body {
 }
 
 .close-button {
-
+  border-radius: @border-radius;
   .items-middle;
   height: 40px;
   width: 40px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.40);
+  background: rgba(51, 51, 51, .20);
   color: @white;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(51, 51, 51, 0.75);
   }
 
   @media (max-width: 1024px) {
