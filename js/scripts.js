@@ -4,6 +4,7 @@ $(document).ready(function() {
       attachCloseToTop();
     }
   });
+
   $( window ).resize(function() {
     if($(document).width() < 1025) {
       $('#blog-post').addClass('relative-position')
@@ -14,9 +15,10 @@ $(document).ready(function() {
       $('#blog-post').removeClass('relative-position')
     }
   });
+  
 });
 
-
+// attaches close button to the top when scrolling
 attachCloseToTop = function() {
   if(!($('#blog-post').hasClass('hide'))) {
     var distanceFromTop = $(this).scrollTop();
