@@ -5,7 +5,7 @@
 @secondary: #950b5e;
 @base: #d8d8d8;
 
-@font-family: "Open Sans";
+@font-family: 'Open Sans', sans-serif;
 
 //widths
 @laptop-width: 1025px;
@@ -100,12 +100,13 @@ html, body {
 
 //blog-post
 .blog-post {
-  // background: hsla(320, 74%, 98%, 0.15);
   .fix-position-sidebar;
   height: auto;
+
   .wrapper {
       .pad-bottom(30vh);
   }
+
   @media (max-width: 1024px) {
     .relative-position;
   }
