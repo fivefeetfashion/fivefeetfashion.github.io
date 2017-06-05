@@ -5,6 +5,8 @@
 @secondary: #950b5e;
 @base: #d8d8d8;
 
+@font-family: "Open Sans";
+
 //widths
 @laptop-width: 1025px;
 @sidebar-width: 250px;
@@ -19,6 +21,7 @@ html, body {
   @media (min-width: @laptop-width) {
     overflow: hidden;
   }
+  font-family: @font-family;
 }
 
 .container-fluid {
@@ -26,7 +29,8 @@ html, body {
 }
 
 .sidebar {
-  background: url('../../img/tweed.png') repeat;
+  // background: url('../../img/tweed.png') repeat;
+  background: #222;
   height: @sidebar-height;
 
   @media (min-width: @laptop-width) {
@@ -44,7 +48,7 @@ html, body {
 }
 
 .content {
-  background: url('../../img/furley_bg.png') repeat;
+  // background: url('../../img/furley_bg.png') repeat;
   height: auto;
   .fix-position-sidebar;
 
@@ -56,7 +60,7 @@ html, body {
 .card {
   border-radius: @border-radius;
   margin: 5vh auto;
-  background: @white;
+  // background: @white;
 
   width: 90vw;
   height: 60vw;
@@ -65,26 +69,41 @@ html, body {
     height: 40vw;
   }
 }
+
 .card-thumbnail {
+  padding: 0;
   border-top-left-radius: @border-radius;
   border-top-right-radius: @border-radius;
-  background: @secondary;
   height: 80%;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  border: 0.5px solid rgba(0, 0, 0, .3);
+  // border-bottom: none;
 }
 .card-title {
   border-bottom-left-radius: @border-radius;
   border-bottom-right-radius: @border-radius;
-  background: @primary;
+  color: rgba(0, 0, 0, .8);
   height: 20%;
+
+  h2 {
+    font-weight: 400;
+  }
+  h4 {
+    font-weight: 300;
+  }
+  padding-left: 0;
 }
 
 //blog-post
 .blog-post {
-  background: @white;
+  // background: hsla(320, 74%, 98%, 0.15);
   .fix-position-sidebar;
-
+  height: auto;
   .wrapper {
-      .pad-bottom(20vh);
+      .pad-bottom(30vh);
   }
   @media (max-width: 1024px) {
     .relative-position;
@@ -126,7 +145,17 @@ html, body {
 }
 
 .post {
-  height: 110vh;
+  min-height: 100vh;
+  width: 70%;
+  p {
+    font-family: @font-family;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 2em;
+    // color: rgba(0, 0, 0, 0.8);
+    color: hsla(246, 68%, 26%, 0.8);
+  }
 }
 
 // helpers
@@ -173,4 +202,9 @@ html, body {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(85,85,85,1);
   -moz-box-shadow: 0px 0px 4px 2px rgba(85,85,85,1);
   box-shadow: 0px 0px 4px 2px rgba(85,85,85,1);
+}
+
+.border {
+  // border: 1px solid #950b5e;
+  border: 1px solid rgba(0, 0, 0, .6);
 }
