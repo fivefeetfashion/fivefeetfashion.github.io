@@ -73,23 +73,23 @@ html, body {
   @media (min-width: @laptop-width) {
     margin: 30px 0 30px 0;
   }
+  padding: 0 10px;
   .flex-container;
   -webkit-flex-direction: column;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-self: stretch;
 }
 
 nav {
   .flex-container;
   justify-content: center;
-
   h4 {
     color: hsla(255, 100%, 100%, 0.7);
     text-align: center;
     margin: 0;
     padding: 10px 10px;
-    align-self: flex-end;
+    align-self: center;
     @media (min-width: @laptop-width) {
       align-self: stretch;
     }
