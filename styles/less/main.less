@@ -117,9 +117,10 @@ nav {
 
 .masthead {
   text-align: center;
-  margin-top: 30px;
+  margin: 30px auto;
+  .card-width;
   img {
-    width: 95%;
+    width: inherit;
   }
 }
 
@@ -348,84 +349,5 @@ nav {
 .laptop-mode {
   @media (max-width: 1024px) {
     display: none;
-  }
-}
-
-
-
-
-
-//share & follow
-.follow, .share {
-  align-self: center;
-  cursor: default;
-  padding: 0;
-  margin: 5px 0;
-  position: relative;
-  text-align: center;
-
-  &:hover .label {
-    opacity: 0;
-    transition: opacity .2s .125s ease-out;
-  }
-  &:hover .icon {
-    border-radius: 2em;
-    margin: 0 0;
-  }
-}
-
-.icon, .label {
-  background-color: white;
-  line-height: 2rem;
-}
-.label {
-  font-family: @font-roboto;
-  font-weight: 700;
-
-  padding: 5px 10px;
-  color: #222;
-  border-radius: 2em;
-  position: absolute;
-  font-size: 1em;
-  font-weight: 900;
-  letter-spacing: .0816em;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  pointer-events: none;
-  text-transform: uppercase;
-  transition: opacity .2s .4s ease-out;
-}
-
-.icon {
-  padding-top: 2px;
-  display: none;
-  border-radius: 0;
-  cursor: pointer;
-  display: inline-block;
-  height: 2em;
-  margin: 0 -.5em;
-  transition:
-    background-color .2s ease-out,
-    border-radius .2s .25s ease-out,
-    margin .2s .25s ease-out;
-  width: 2em;
-
-  &.first {
-    border-bottom-left-radius: 2em;
-    border-top-left-radius: 2em;
-    margin-left: 0;
-  }
-
-  &.last {
-    border-bottom-right-radius: 2em;
-    border-top-right-radius: 2em;
-    margin-right: 0;
-  }
-
-  &:hover {
-    background-color: @secondary;
-    color: white;
   }
 }
