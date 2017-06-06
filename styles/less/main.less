@@ -162,7 +162,7 @@ nav {
     width: inherit;
   }
   hr {
-    border-top: 2px solid #222222;
+    border-top: 2px solid @primary;
     text-align: center;
     height: auto;
     width: 70%;
@@ -172,18 +172,18 @@ nav {
   }
 
  hr:after {
-   content: 'Anokhi Bhardwaj';
-   display: inline-block;
-   position: relative;
-   top: -16px;
-   padding: 0 10px;
-   background: #FFFFFF;
-   .secondary-color(1);
-   .font-settings(300,20px,0,none);
-   @media (min-width: @laptop-width) {
-     top: -23px;
-     font-size: 28px;
-   }
+    content: 'Anokhi Bhardwaj';
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    padding: 0 10px;
+    background: #FFFFFF;
+    .secondary-color(1);
+    .font-settings(300,20px,0,none);
+    @media (min-width: @laptop-width) {
+      top: -23px;
+      font-size: 28px;
+    }
  }
 }
 
