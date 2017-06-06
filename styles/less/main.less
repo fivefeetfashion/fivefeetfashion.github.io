@@ -84,6 +84,8 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-self: stretch;
+  position: relative;
+
 }
 
 nav {
@@ -111,8 +113,12 @@ nav {
   @media (min-width: @laptop-width) {
     margin-top: 40px;
   }
+  @media (max-width: 1024px) {
+    top: 0;
+    position: absolute;
+    margin-top: 30px;;
+  }
   align-self: center;
-  margin-bottom: 30px;
 }
 
 .icon {
