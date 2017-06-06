@@ -5,7 +5,7 @@
 @secondary: #950b5e;
 @base: #d8d8d8;
 
-@font-family: 'Open Sans', sans-serif;
+@font-open: 'Open Sans', sans-serif;
 
 //widths
 @laptop-width: 1025px;
@@ -21,7 +21,7 @@ html, body {
   @media (min-width: @laptop-width) {
     overflow: hidden;
   }
-  font-family: @font-family;
+  font-family: @font-open;
 }
 
 .container-fluid {
@@ -50,14 +50,13 @@ html, body {
 }
 
 .logo {
-  // background: white;
-  background: #D81B60;
+  .primary-background(1);
   width: 23vh;
-    align-self: center;
+  align-self: center;
   margin-left: 1vh;
 
   @media (min-width: @laptop-width) {
-    margin: 40px 0 10px 0;;
+    margin: 30px 0 10px 0;
     width: 70%;
   }
 
@@ -66,6 +65,37 @@ html, body {
     height: 100%;
   }
 }
+
+.sidebar-content {
+  @media (min-width: @laptop-width) {
+    margin: 30px 0 30px 0;
+  }
+  .flex-container;
+  justify-content: center;
+  align-self: stretch;
+}
+
+nav {
+  .flex-container;
+  justify-content: center;
+
+  h4 {
+    color: hsla(255, 100%, 100%, 0.7);
+    text-align: center;
+    margin: 0;
+    padding: 10px 10px;
+    align-self: flex-end;
+    @media (min-width: @laptop-width) {
+      align-self: stretch;
+    }
+
+    &:hover {
+      .secondary-background(0.5);
+    }
+  }
+
+}
+
 .content {
   height: auto;
   .fix-position-sidebar;
@@ -82,6 +112,7 @@ html, body {
 
 .masthead {
   text-align: center;
+  margin-top: 30px;
   img {
     width: 95%;
   }
@@ -94,7 +125,7 @@ html, body {
   &:hover {
     .card-title {
       span {
-        .primary-color(0.8);
+        .primary-color(1);
       }
     }
   }
@@ -124,7 +155,7 @@ html, body {
   .card-width;
   text-align: left;
   h2 {
-    .primary-color(0.8);
+    .primary-color(0.9);
     .font-settings(500, 2.3em, 1.5px, 1.1em);
     @media (min-width: @laptop-width) {
       .font-settings(600, 2.3em, 1.5px, 1.5em);
@@ -133,7 +164,6 @@ html, body {
   h4 {
     .secondary-color(0.6);
     .font-settings(300, 1.1em, 1px, 1.4em);
-
     @media (min-width: @laptop-width) {
       .font-settings(300, 1.3em, 1.5px, 1.4em);
     }
@@ -200,12 +230,12 @@ html, body {
   p {
     .secondary-color(.75);
     // color: hsla(246, 68%, 26%, 0.8);
-    .font-settings(400, 1.2em, 1.5px, 2em);
+    .font-settings(400, 1.2em, 1px, 2em);
   }
 
   @media (min-width: @laptop-width) {
     p {
-      .font-settings(400, 1.5em, 1.5px, 2em);
+      .font-settings(400, 1.5em, 1px, 2em);
     }
     width: 70%;
   }
@@ -263,7 +293,7 @@ html, body {
 }
 
 .font-settings(@f-w, @f-s, @l-s, @l-h) {
-  font-family: @font-family;
+  font-family: @font-open;
   font-weight: @f-w;
   font-size: @f-s;
   letter-spacing: @l-s;
@@ -280,7 +310,6 @@ html, body {
 .flex-container {
   display: -webkit-flex;
   display: flex;
-
   -webkit-flex-direction: row;
   flex-direction: row;
   @media (min-width: @laptop-width) {
@@ -295,4 +324,12 @@ html, body {
 
 .secondary-color(@alpha) {
   color: hsla(0, 0%, 0%, @alpha);
+}
+
+.primary-background(@alpha) {
+  background: hsla(338, 78%, 48%, @alpha);
+}
+
+.secondary-background(@alpha) {
+  background: hsla(0, 0%, 0%, @alpha);
 }
