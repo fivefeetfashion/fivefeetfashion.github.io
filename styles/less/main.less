@@ -118,7 +118,7 @@ nav {
 
 .masthead {
   text-align: center;
-  margin: 30px auto;
+  margin: 30px auto 80px auto;
   .card-width;
   img {
     width: inherit;
@@ -126,22 +126,25 @@ nav {
   hr {
     border-top: 2px solid #222222;
     text-align: center;
-    margin: 1.7vw auto;
-    width: 60%;
+    height: auto;
+    width: 70%;
+    @media (min-width: @laptop-width) {
+      margin: 1.7vw auto;
+    }
   }
 
  hr:after {
    content: 'Anokhi Bhardwaj';
    display: inline-block;
    position: relative;
-   top: -2.5vw;
+   top: -16px;
    padding: 0 10px;
    background: #FFFFFF;
    .secondary-color(1);
-   .font-settings(300,3vw,0,none);
+   .font-settings(300,20px,0,none);
    @media (min-width: @laptop-width) {
-     top: -1.5vw;
-     font-size: 2vw;
+     top: -23px;
+     font-size: 28px;
    }
  }
 }
