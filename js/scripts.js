@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.close-button').fadeOut('fast');
   $(window).scroll(function() {
       attachCloseToTop();
   });
@@ -39,12 +40,18 @@ attachCloseToTop = function() {
 //switch between blig list and blog post
 $('.card').click(function() {
   // console.log($(this).attr('id'));
-  $('.content').addClass('hide');
-  $('.blog-post').removeClass('hide');
-  attachCloseToTop();
+  $('.content').fadeOut("fast");
+
+  $('#blog-post').fadeIn("fast", function() {
+    setTimeout(function(){
+      $('.close-button').fadeIn('slow');
+      attachCloseToTop();
+    }, 100);
+  });
 });
 
 $('.close-button').click(function() {
-  $('.content').removeClass('hide');
-  $('.blog-post').addClass('hide');
+  $('.close-button').fadeOut('fast');
+  $('.content').fadeIn("fast");
+  $('#blog-post').fadeOut("fast");
 });

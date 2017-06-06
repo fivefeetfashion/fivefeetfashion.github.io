@@ -78,15 +78,15 @@ a {
   @media (min-width: @laptop-width) {
     margin: 30px 0 30px 0;
   }
-  padding: 0 10px;
   .flex-container;
   -webkit-flex-direction: column;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-self: stretch;
 }
 
 nav {
+  .white-color(0.8);
   .flex-container;
   justify-content: center;
   h4 {
@@ -99,7 +99,7 @@ nav {
     }
 
     &:hover {
-      .secondary-background(0.5);
+      .secondary-background(0.2);
       .white-color(0.8);
     }
   }
@@ -114,6 +114,7 @@ nav {
 }
 
 .icon {
+  cursor: pointer;
   .items-middle;
   justify-content: space-around;
 
@@ -247,10 +248,11 @@ nav {
 
 //blog-post
 .blog-post {
+  .hide;
   .fix-position-sidebar;
   height: auto;
-
   .wrapper {
+      padding-top: 20vh;
       .pad-bottom(30vh);
   }
 
@@ -260,23 +262,26 @@ nav {
 }
 
 .close-button {
+  display: none;
   border-radius: @border-radius;
   .items-middle;
   height: 40px;
   width: 40px;
   text-align: center;
-  background: rgba(51, 51, 51, .20);
+  .primary-background(0.5);
   color: @white;
+  font-weight: bold;
 
   cursor: pointer;
 
   &:hover {
-    background: rgba(51, 51, 51, 0.75);
+    .primary-background(0.8);
   }
 
   @media (max-width: 1024px) {
     top: (@sidebar-height + 10px);
     .close-button-absolute;
+    .primary-background(0.65);
   }
   @media (min-width: 1025px) {
     .close-button-fixed;
@@ -293,6 +298,16 @@ nav {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.post-title {
+  text-align: center;
+  .primary-color(0.8);
+  h1 {
+    .font-settings(500, 5rem, 1px, 7rem);
+    margin: 0;
+  }
+  margin-bottom: 40px;
 }
 
 .post {
