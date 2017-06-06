@@ -360,7 +360,7 @@ nav {
   align-self: center;
   cursor: default;
   padding: 0;
-  margin: 10px .5em;
+  margin: 5px 0;
   position: relative;
   text-align: center;
 
@@ -369,7 +369,7 @@ nav {
     transition: opacity .2s .125s ease-out;
   }
   &:hover .icon {
-    border-radius: 1em;
+    border-radius: 2em;
     margin: 0 0;
   }
 }
@@ -379,9 +379,12 @@ nav {
   line-height: 2rem;
 }
 .label {
+  font-family: @font-roboto;
+  font-weight: 700;
+
   padding: 5px 10px;
   color: #222;
-  border-radius: 1rem;
+  border-radius: 2em;
   position: absolute;
   font-size: 1em;
   font-weight: 900;
@@ -392,7 +395,7 @@ nav {
   opacity: 1;
   pointer-events: none;
   text-transform: uppercase;
-  transition: opacity .2s .2s ease-out;
+  transition: opacity .2s .4s ease-out;
 }
 
 .icon {
@@ -410,14 +413,14 @@ nav {
   width: 2em;
 
   &.first {
-    border-bottom-left-radius: 1em;
-    border-top-left-radius: 1em;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
     margin-left: 0;
   }
 
   &.last {
-    border-bottom-right-radius: 1em;
-    border-top-right-radius: 1em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
     margin-right: 0;
   }
 
