@@ -25,6 +25,10 @@ html, body {
   font-family: @font-open;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -121,12 +125,18 @@ nav {
   display: inline-block;
   background: white;
   border-radius: 2em;
-
   margin: 0 5px;
 
-  &:hover, &:active {
+  &:hover, &:focus {
     .primary-background(0.7);
-    .white-color(1);
+    i {
+      .white-color(1);
+    }
+  }
+
+  i {
+    .secondary-color(0.8);
+
   }
 }
 
