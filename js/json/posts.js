@@ -54,11 +54,15 @@ post = {
     },
     {
       type: "img",
-      url: "http://i.imgur.com/bhilcIO.jpg",
+      url: "http://i.imgur.com/SsoyUnk.jpg"
     },
     {
       type: "h4",
       text: "<br><br>Outfit Details-"
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/bhilcIO.jpg",
     },
     {
       type: "text",
@@ -104,5 +108,13 @@ post = {
       type: "img",
       url: "http://i.imgur.com/ifa3wsd.jpg",
     },
+    {
+      type: "h4",
+      text: "<br><br>Outfit Details-"
+    },
+    {
+      type: "text",
+      text: "top - H&M <br>denims - H&M <br>bag - Forever21 <br>shoes - Aldo <br>earings - Janpath"
+    }
   ]
 }
