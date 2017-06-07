@@ -166,7 +166,7 @@ post = {
     },
     {
       type: "text",
-      text: "Top - Delhi Haat <br>Jeans - H&M <br>Bag - Aldo <br>Earings and Sandals - Janpath"
+      text: "Top - Stalk By Love <br>Jeans - H&M <br>Bag - Aldo <br>Earings and Sandals - Janpath"
     },
     {
       type: "text",
