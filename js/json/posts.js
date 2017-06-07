@@ -170,7 +170,7 @@ post = {
     },
     {
       type: "text",
-      text: "And with that we come to the end of my first post! I really hope you liked it. Feel free to like share and comment. I'd love to here what you guys have to say about it :) Till next time , CIAO!"
+      text: "<br><br>And with that we come to the end of my first post! I really hope you liked it. Feel free to like share and comment. I'd love to here what you guys have to say about it :) Till next time , CIAO!"
     },
     {
       type: "h4",
