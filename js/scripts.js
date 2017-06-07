@@ -1,4 +1,4 @@
-var about = {};
+// var about = {};
 
 $(document).ready(function() {
 
@@ -73,10 +73,12 @@ function hideBlogPost() {
   $('.post p').html("");
 }
 
-//About Page
-$('#about').click(function() {
+$(document).on('click', '#about', aboutPage);
+
+
+function aboutPage() {
   setPostHtml(about);
-});
+}
 
 function setPostHtml(object) {
   var string = "";
