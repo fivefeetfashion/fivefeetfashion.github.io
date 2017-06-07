@@ -18,8 +18,7 @@ post = {
   data: [
     {
       type: "img",
-      url: "http://i.imgur.com/iAdzS0X.jpg",
-      v: false
+      url: "http://i.imgur.com/ytxb8uh.jpg",
     },
     {
       type: "text",
@@ -32,7 +31,6 @@ post = {
     {
       type: "img",
       url: "http://i.imgur.com/VycF2fR.jpg",
-      v: false
     },
     {
       type: "text",
@@ -41,30 +39,22 @@ post = {
     {
       type: "img",
       url: "http://i.imgur.com/1wND5VW.jpg",
-      v: false
     },
     {
       type: "img",
       url: "http://i.imgur.com/pJjBuI8.jpg",
-      v: false
     },
     {
-      type: "text";
+      type: "text",
       text: "Moving on to the third and last statement piece of this outfit: my sandals. The moment I saw them in a flee market in Delhi , I knew they would be perfect for a day on the lake. The T cut , mini pom poms, and colorful stones create a shoe that is every season perfection. So I scooped them up and have no regrets. And did I mention they’re Rs 200? STEAL."
     },
     {
       type: "img",
       url: "http://i.imgur.com/bhilcIO.jpg",
-      v: false
     },
     {
       type: "text",
-      text: "outfit details-"
-    },
-    {
-      type: "img",
-      url: "http://i.imgur.com/bhilcIO.jpg",
-      v: false
+      text: "<br><br>Outfit Details-"
     },
     {
       type: "text",

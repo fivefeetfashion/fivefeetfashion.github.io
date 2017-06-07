@@ -49,6 +49,7 @@ attachCloseToTop = function() {
 $('.card').click(function() {
   // console.log($(this).attr('id'));
   showBlogPost();
+  setPostHtml(post);
 });
 $('.close-button').click(function() {
   hideBlogPost();
@@ -75,7 +76,6 @@ function hideBlogPost() {
 
 $(document).on('click', '#about', aboutPage);
 $(document).on('click', '#home', hideBlogPost);
-
 
 function aboutPage() {
   setPostHtml(about);
