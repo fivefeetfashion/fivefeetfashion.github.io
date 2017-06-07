@@ -50,7 +50,6 @@ $('.card').click(function() {
   // console.log($(this).attr('id'));
   showBlogPost();
   setPostHtml(post);
-  $('#disqus_thread').fadeIn('fast');
 });
 $('.close-button').click(function() {
   hideBlogPost();
@@ -73,7 +72,6 @@ function hideBlogPost() {
   $('#blog-post').fadeOut("fast");
   $('.post-title h1').text("");
   $('.post p').html("");
-  $('#disqus_thread').fadeOut('fast');
 }
 
 $(document).on('click', '#about', aboutPage);
