@@ -76,6 +76,7 @@ function hideBlogPost() {
 
 $(document).on('click', '#about', aboutPage);
 $(document).on('click', '#home', hideBlogPost);
+$(document).on('click', '.logo', hideBlogPost);
 
 function aboutPage() {
   setPostHtml(about);
