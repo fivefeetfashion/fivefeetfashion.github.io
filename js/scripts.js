@@ -87,10 +87,7 @@ function setPostHtml(object) {
   var arr = object.data;
   for(var i = 0; i < arr.length; i++) {
     if(arr[i].type === "text") {
-      string += arr[i].text;
-    }
-    if(i != arr.length - 1) {
-      string += "<br><br>";
+      string += "<p>" + arr[i].text; + "</p>";
     }
   }
 
