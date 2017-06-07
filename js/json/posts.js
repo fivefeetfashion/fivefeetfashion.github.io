@@ -154,11 +154,11 @@ post = {
     },
     {
       type: "img",
-      url: "http://i.imgur.com/4Wk4juh.jpg",
+      url: "http://i.imgur.com/naFE8n5.jpg",
     },
     {
       type: "img",
-      url: "http://i.imgur.com/naFE8n5.jpg",
+      url: "http://i.imgur.com/4Wk4juh.jpg",
     },
     {
       type: "h4",
@@ -167,6 +167,18 @@ post = {
     {
       type: "text",
       text: "Top - Delhi Haat <br>Jeans - H&M <br>Bag - Aldo <br>Earings and Sandals - Janpath"
+    },
+    {
+      type: "text",
+      text: "And with that we come to the end of my first post! I really hope you liked it. Feel free to like share and comment. I'd love to here what you guys have to say about it :) Till next time , CIAO!"
+    },
+    {
+      type: "h4",
+      text: "Credits-"
+    },
+    {
+      type: "text",
+      text: "This wouldn't have been possible without my friends' and family's support. Special thanks to Bhavya, who shot these amazing pictures. She's an extremely talented photographer, go check out her <u><a href='https://www.instagram.com/change_her_mind/?hl=en' target='_blank'>instagram</a></u>. And Shubhra, for helping me put this blog together."
     }
   ]
 }
