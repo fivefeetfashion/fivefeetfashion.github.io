@@ -89,6 +89,10 @@ function setPostHtml(object) {
       string += "<p>" + arr[i].text; + "</p>";
     } else if(arr[i].type === "img") {
       string+= "<img src='" + arr[i].url + "' class='img-responsive v-img'/>";
+    } else if(arr[i].type === "h3") {
+      string += "<h3>" + arr[i].text + "</h3>";
+    } else if(arr[i].type === "h4") {
+      string += "<h4>" + arr[i].text + "</h4>";
     }
   }
 

@@ -25,8 +25,12 @@ post = {
       text: "HEY THERE! Its june already? Well even though summer is at its end, some summer fashion trends still seem to be alive. The pom pom trend is literally seen everywhere on social media these days. Two trends I've been seeing out there are tons of colors (multi color everything) and pom pom or tassels. I have a handful of pom pom styles in my closet that I love. It's so great for vacation, and summer with the pops of color. So I put together together 3 looks for you guys which might give you an idea on how to style pom poms.<br><br><br>"
     },
     {
+      type: "h3",
+      text: "LOOK 1."
+    },
+    {
       type: "text",
-      text: "LOOK 1. <br><br> Keeping it really subtle and simple for my first outfit , I paired up this plane white off shoulder top with these khaki green palazzo pants. The Colourful detailing at the botttom brings a new dimension to the outfit."
+      text: "Keeping it really subtle and simple for my first outfit , I paired up this plane white off shoulder top with these khaki green palazzo pants. The Colourful detailing at the botttom brings a new dimension to the outfit."
     },
     {
       type: "img",
@@ -53,7 +57,7 @@ post = {
       url: "http://i.imgur.com/bhilcIO.jpg",
     },
     {
-      type: "text",
+      type: "h4",
       text: "<br><br>Outfit Details-"
     },
     {
