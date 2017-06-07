@@ -22,7 +22,7 @@ post = {
     },
     {
       type: "text",
-      text: "HEY THERE! Its june already? Well even though summer is at its end, some summer fashion trends still seem to be alive. The pom pom trend is literally seen everywhere on social media these days. Two trends I've been seeing out there are tons of colors (multi color everything) and pom pom or tassels. I have a handful of pom pom styles in my closet that I love. It's so great for vacation, and summer with the pops of color. So I put together together 3 looks for you guys which might give you an idea on how to style pom poms.<br><br><br>"
+      text: "HEY THERE! Wow, is it June already!? Well even though summer is at its end, it has left behind some great fashion trends that are still alive and kicking! The pom pom is seen on literally every social media platforms these days! Two of the most popular trends are multi colour clothing be it from tops to shoes and the adorable pom pom or tassel trend. <br><br>I have a handful of colorful pom pom styles that I have brought together to make these colourful looks, fusing both these summer trends. It's great for giving any outing or vacation a pop of color and drizzle of fashion. I have put together 3 looks for you guys which I hope inspires you to have your own take on this cute idea!.<br><br><br>"
     },
     {
       type: "h3",
@@ -115,6 +115,58 @@ post = {
     {
       type: "text",
       text: "top - H&M <br>denims - H&M <br>bag - Forever21 <br>shoes - Aldo <br>earings - Janpath"
+    },
+    {
+      type: "h3",
+      text: "Look 3"
+    },
+    {
+      type: "text",
+      text: "The last one is my personal favourite."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/vLHjsaH.jpg",
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/XQ8Cuvt.jpg",
+    },
+    {
+      type: "text",
+      text: "To be honest, I was a little skeptical when ordering this top/ cropped kurta and expected not to like it when it came in the mail. BOY, was I wrong! I am in love with the beautiful blue flower print and the colourful pom threads. Its flowy and and comfortable and perfect top for a sunday brunch."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/aZJiJPP.jpg",
+    },
+    {
+      type: "text",
+      text: "The combination of blue and white is always something I enjoy, so paired this top with my favorite pair of high-waisted denims and these sandals with pom pom details."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/yCE7Fod.jpg",
+    },
+    {
+      type: "text",
+      text: "To complete this look, I added these colourful stone detailed earings as it complimented the look really well. With this outfit , I personally feel you to go with any bag of your choice. I wore this pastel purple/mauve coloured sling bag as it gave the entire outfit an edgy look."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/4Wk4juh.jpg",
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/naFE8n5.jpg",
+    },
+    {
+      type: "h4",
+      text: "<br><br>Outfit Details-"
+    },
+    {
+      type: "text",
+      text: "Top - Delhi Haat <br>Jeans - H&M <br>Bag - Aldo Earings <br>Sandals - Janpath"
     }
   ]
 }
