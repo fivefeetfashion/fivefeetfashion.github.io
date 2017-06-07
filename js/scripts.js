@@ -1,9 +1,16 @@
+var about = {};
+
 $(document).ready(function() {
+
+  //setup close-button;
   $('.close-button').fadeOut('fast');
+
+  //change position of close-button on scroll if needed
   $(window).scroll(function() {
       attachCloseToTop();
   });
 
+  //change position of close-button if tablet mode
   $( window ).resize(function() {
     if($(document).width() < 1025) {
       $('#blog-post').addClass('relative-position')
@@ -15,6 +22,7 @@ $(document).ready(function() {
     }
   });
 
+  //if mobile, set "continue reading" to high alpha color;
   if (/Mobi/i.test(navigator.userAgent) || /Anroid/i.test(navigator.userAgent)) {
     // mobile!
     $('.card span').css({"color": "hsla(340, 82%, 52%, 1)"})
@@ -37,9 +45,17 @@ attachCloseToTop = function() {
   }
 };
 
-//switch between blig list and blog post
+//switch between blog list and blog post
 $('.card').click(function() {
   // console.log($(this).attr('id'));
+  showBlogPost();
+});
+$('.close-button').click(function() {
+  hideBlogPost();
+});
+
+//helpers
+function showBlogPost() {
   $('.content').fadeOut("fast");
 
   $('#blog-post').fadeIn("fast", function() {
@@ -48,10 +64,33 @@ $('.card').click(function() {
       attachCloseToTop();
     }, 100);
   });
-});
-
-$('.close-button').click(function() {
+};
+function hideBlogPost() {
   $('.close-button').fadeOut('fast');
   $('.content').fadeIn("fast");
   $('#blog-post').fadeOut("fast");
+  $('.post-title h1').text("");
+  $('.post p').html("");
+}
+
+//About Page
+$('#about').click(function() {
+  setPostHtml(about);
 });
+
+function setPostHtml(object) {
+  var string = "";
+  var arr = object.data;
+  for(var i = 0; i < arr.length; i++) {
+    if(arr[i].type === "text") {
+      string += arr[i].text;
+    }
+    if(i != arr.length - 1) {
+      string += "<br><br>";
+    }
+  }
+
+  showBlogPost();
+  $('.post-title h1').text(object.title);
+  $('.post p').html(string);
+};
