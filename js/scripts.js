@@ -1,4 +1,3 @@
-// var about = {};
 
 $(document).ready(function() {
 

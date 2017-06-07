@@ -12,3 +12,63 @@ about = {
     }
   ]
 };
+
+post = {
+  title: "Pom Poms and Play",
+  data: [
+    {
+      type: "img",
+      url: "http://i.imgur.com/iAdzS0X.jpg",
+      v: false
+    },
+    {
+      type: "text",
+      text: "HEY THERE! Its june already? Well even though summer is at its end, some summer fashion trends still seem to be alive. The pom pom trend is literally seen everywhere on social media these days.Two trends I've been seeing out there is tons of colors (multi color everything) and pom pom or tassels. I have a handful of pom pom styles in my closet that I love. It's so great for vacation,and summer with the pops of color. So i put together together 3 looks for you guys which might give you an idea on how to style pom poms.<br><br><br>"
+    },
+    {
+      type: "text",
+      text: "LOOK 1. <br><br> Keeping it really subtle and simple for my first outfit , i paired up this plane white off shoulder top with these khaki green palazzo pants. The Colourful detailing at the botttom brings a new dimension the outfit."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/VycF2fR.jpg",
+      v: false
+    },
+    {
+      type: "text",
+      text: "These statement pieces are perfect to transform to subtle outfit to a playful one and make it so much more fun! I wore these cute pom pom earings and a pink clutch with pink pom pom straps to add some colour to this look and i absoulutely loved how it turned out."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/1wND5VW.jpg",
+      v: false
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/pJjBuI8.jpg",
+      v: false
+    },
+    {
+      type: "text";
+      text: "Moving on to the third and last statement piece of this outfit: my sandals. The moment I saw them in a flee market in Delhi , I knew they would be perfect for a day on the lake. The T cut , mini pom poms, and colorful stones create a shoe that is every season perfection. So I scooped them up and have no regrets. And did I mention they’re Rs 200? STEAL."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/bhilcIO.jpg",
+      v: false
+    },
+    {
+      type: "text",
+      text: "outfit details-"
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/bhilcIO.jpg",
+      v: false
+    },
+    {
+      type: "text",
+      text: "Top- Forever 21 <br>Palazzo - Fabindia <br>earings - Delhi Haat <br>clutch and sandals - Janpath"
+    }
+  ]
+}
