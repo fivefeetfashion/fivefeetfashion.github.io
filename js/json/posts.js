@@ -63,6 +63,46 @@ post = {
     {
       type: "text",
       text: "Top- Forever 21 <br>Palazzo - Fabindia <br>earings - Delhi Haat <br>clutch and sandals - Janpath"
-    }
+    },
+    {
+      type: "h3",
+      text: "LOOK 2."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/yfSKhNf.jpg",
+    },
+    {
+      type: "text",
+      text: "Isn’t this the MOST fun top?? This colourful pom pom top basically checks off all the boxes of things I love in a top: colourful, cold shoulder, bell sleeves and pom poms. Pretty rare to find them all in one affordable top! I have to admit, I was a tad wary at first of the cold shoulder cut, but when I wore it, it was a surprise how much I loved it! With primary color pom poms, you can’t go wrong for a fun spring brunch or window shopping."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/8mBio0o.jpg",
+    },
+    {
+      type: "text",
+      text: "I paired it up with my favourite pair high waisted denims. Ripped jeans were seen everywhere in the past year and it never seems to go out of fashion. But since I already went a little over the TOP with the TOP, I decided to keep it a little low with the rips."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/vJqX9GU.jpg",
+    },
+    {
+      type: "text",
+      text: "Hoop earings are a constant in every girl's ear piece collection. These black pom pom hoop earings are something that caught my eye because they are so different and yet so easy to style."
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/jtgrA7R.jpg",
+    },
+    {
+      type: "text",
+      text: "Lastly, to balance this look, I chose these simple brown/black leather shoes and a brown backpack. This gives a casual touch to the look. To complete this look, add a pair of black sunglasses. You can never go wrong with black shades!"
+    },
+    {
+      type: "img",
+      url: "http://i.imgur.com/ifa3wsd.jpg",
+    },
   ]
 }
