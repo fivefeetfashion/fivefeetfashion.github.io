@@ -88,6 +88,8 @@ function setPostHtml(object) {
   for(var i = 0; i < arr.length; i++) {
     if(arr[i].type === "text") {
       string += "<p>" + arr[i].text; + "</p>";
+    } else if(arr[i].type === "img") {
+      string+= "<img src='" + arr[i].url + "' class='img-responsive v-img'/>";
     }
   }
 

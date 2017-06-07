@@ -3,7 +3,7 @@ about = {
   data: [
     {
       type: "img",
-      url: "http://imgur.com/iAdzS0X",
+      url: "http://i.imgur.com/iAdzS0X.jpg",
       v: true
     },
     {

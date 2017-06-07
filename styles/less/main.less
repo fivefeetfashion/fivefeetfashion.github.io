@@ -301,7 +301,7 @@ nav {
   .fix-position-sidebar;
   height: auto;
   .wrapper {
-      padding-top: 20vh;
+      padding-top: 10vh;
       .pad-bottom(30vh);
   }
 
@@ -356,7 +356,7 @@ nav {
     .font-settings(500, 5rem, 1px, 7rem);
     margin: 0;
   }
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .post {
@@ -365,12 +365,22 @@ nav {
   p {
     .secondary-color(.75);
     // color: hsla(246, 68%, 26%, 0.8);
-    .font-settings(400, 1.2em, 1px, 2em);
+    .font-settings(400, 1.1em, 1px, 1.5em);
+  }
+  img {
+    max-height: 80vh;
   }
 
   @media (min-width: @laptop-width) {
+    p {
+      .font-settings(400, 1.2em, 1px, 1.7em);
+    }
     width: 70%;
   }
+}
+
+.v-img {
+  margin: 20px auto;
 }
 
 // helpers
