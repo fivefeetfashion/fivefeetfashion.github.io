@@ -74,6 +74,7 @@ function hideBlogPost() {
 }
 
 $(document).on('click', '#about', aboutPage);
+$(document).on('click', '#home', hideBlogPost);
 
 
 function aboutPage() {
