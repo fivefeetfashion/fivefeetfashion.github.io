@@ -57,12 +57,12 @@ post = {
       url: "http://i.imgur.com/SsoyUnk.jpg"
     },
     {
-      type: "h4",
-      text: "<br><br>Outfit Details-"
-    },
-    {
       type: "img",
       url: "http://i.imgur.com/bhilcIO.jpg",
+    },
+    {
+      type: "h4",
+      text: "<br><br>Outfit Details-"
     },
     {
       type: "text",
@@ -166,7 +166,7 @@ post = {
     },
     {
       type: "text",
-      text: "Top - Delhi Haat <br>Jeans - H&M <br>Bag - Aldo Earings <br>Sandals - Janpath"
+      text: "Top - Delhi Haat <br>Jeans - H&M <br>Bag - Aldo <br>Earings and Sandals - Janpath"
     }
   ]
 }
