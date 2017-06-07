@@ -50,7 +50,7 @@ $('.card').click(function() {
   // console.log($(this).attr('id'));
   showBlogPost();
   setPostHtml(post);
-  $('.fb-comments').fadein("fast");
+  $('.fb-comments').fadeIn("fast");
 });
 $('.close-button').click(function() {
   hideBlogPost();
