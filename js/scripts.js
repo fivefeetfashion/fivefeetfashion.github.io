@@ -25,7 +25,8 @@ $(document).ready(function() {
   //if mobile, set "continue reading" to high alpha color;
   if (/Mobi/i.test(navigator.userAgent) || /Anroid/i.test(navigator.userAgent)) {
     // mobile!
-    $('.card span').css({"color": "hsla(340, 82%, 52%, 1)"})
+    $('.card span').css({"color": "hsla(340, 82%, 52%, 1)"});
+    $.('.follow').css({"padding-left": "10px"})
   }
 });
 
