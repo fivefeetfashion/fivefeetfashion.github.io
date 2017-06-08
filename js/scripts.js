@@ -74,7 +74,7 @@ function hideBlogPost() {
   $('.post-title h1').text("");
   $('.post p').html("");
   $('.fb-comments').fadeOut("fast");
-}
+};
 
 $(document).on('click', '#about', aboutPage);
 $(document).on('click', '#home', hideBlogPost);
@@ -82,7 +82,7 @@ $(document).on('click', '.logo', hideBlogPost);
 
 function aboutPage() {
   setPostHtml(about);
-}
+};
 
 function setPostHtml(object) {
   var string = "";
