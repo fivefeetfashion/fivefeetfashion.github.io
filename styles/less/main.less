@@ -503,3 +503,79 @@ nav {
     display: none;
   }
 }
+
+.share-container {
+  position: fixed;
+  display: inline-block;
+  bottom: 20px;
+  right: 25px;
+}
+
+.share {
+  display: inline-block;
+  cursor: default;
+  padding: 0;
+  position: relative;
+  text-align: center;
+
+  &:hover .label {
+    opacity: 0;
+    transition: opacity .4s .125s ease-out;
+  }
+  &:hover .icon-share {
+    border-radius: 1em;
+    margin: 0 0;
+  }
+}
+
+.icon-share, .label {
+  .primary-background(1);
+  line-height: 2rem;
+}
+.label {
+  padding: .45em .6em .3em;
+  border-radius: 1rem;
+  position: absolute;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: .0816em;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: opacity .2s .4s ease-out;
+}
+
+.icon-share {
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+  width: 30px;
+  margin: 0 -18px;
+  transition:
+    background-color .2s ease-out,
+    border-radius .2s .25s ease-out,
+    margin .2s .25s ease-out;
+
+  &.first {
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    margin-left: 0;
+  }
+
+  &.last {
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-right: 0;
+  }
+
+  &:hover {
+    .primary-background(1);
+    .white-color(1);
+  }
+  padding-top: 0.5em;
+  font-size: 1.1em;
+}
