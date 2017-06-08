@@ -266,6 +266,7 @@ nav {
   border: 0.5px solid rgba(0, 0, 0, .3);
 }
 
+
 .card-title {
   border-bottom-left-radius: @border-radius;
   border-bottom-right-radius: @border-radius;
@@ -306,23 +307,26 @@ nav {
   }
 }
 
-.close-button {
-  display: none;
+.share-button, .close-button {
   border-radius: @border-radius;
-  .items-middle;
   height: 40px;
   width: 40px;
   text-align: center;
   .primary-background(0.5);
   color: @white;
   font-weight: bold;
-
   cursor: pointer;
+  i {
+    .white-color(0.9);
+  }
+}
 
+.close-button {
+  display: none;
+  .items-middle;
   &:hover {
     .primary-background(0.8);
   }
-
   @media (max-width: 1024px) {
     top: (@sidebar-height + 10px);
     .close-button-absolute;
@@ -343,6 +347,16 @@ nav {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.share-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  .items-middle;
+  &:hover {
+    .primary-background(0.8);
+  }
 }
 
 .post-title {
@@ -502,4 +516,11 @@ nav {
   @media (max-width: 1024px) {
     display: none;
   }
+}
+
+.share-container {
+  position: fixed;
+  display: inline-block;
+  bottom: 20px;
+  right: 25px;
 }
