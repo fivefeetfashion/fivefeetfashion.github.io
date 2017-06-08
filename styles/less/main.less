@@ -144,6 +144,11 @@ nav {
 }
 
 .icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
   cursor: pointer;
   .items-middle;
   align-self: center;
@@ -162,12 +167,14 @@ nav {
   background: white;
   border-radius: 2em;
   margin: 5px 5px;
+  .secondary-color(0.8);
 
   &:hover, &:focus {
     .primary-background(0.7);
     i {
       .white-color(1);
     }
+    .white-color(1);
   }
 
   i {
@@ -317,6 +324,10 @@ nav {
   font-weight: bold;
   cursor: pointer;
   i {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
     .white-color(0.9);
   }
 }
@@ -518,9 +529,15 @@ nav {
   }
 }
 
-.share-container {
-  position: fixed;
-  display: inline-block;
-  bottom: 20px;
-  right: 25px;
+//icon font
+
+@font-face {
+      font-family: 'fontello';
+      src: url('./font/fontello.eot?61577983');
+      src: url('./font/fontello.eot?61577983#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?61577983') format('woff'),
+           url('./font/fontello.ttf?61577983') format('truetype'),
+           url('./font/fontello.svg?61577983#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
 }
