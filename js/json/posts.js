@@ -30,7 +30,7 @@ post = {
     },
     {
       type: "text",
-      text: "Keeping it really subtle and simple for my first outfit , I paired up this plane white off shoulder top with these khaki green palazzo pants. The Colourful detailing at the botttom brings a new dimension to the outfit."
+      text: "Keeping it really subtle and simple for my first outfit , I paired up this plain white off shoulder top with these khaki green palazzo pants. The Colourful detailing at the botttom brings a new dimension to the outfit."
     },
     {
       type: "img",
