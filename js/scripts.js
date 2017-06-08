@@ -103,7 +103,3 @@ function setPostHtml(object) {
   $('.post-title h1').text(object.title);
   $('.post p').html(string);
 };
-
-$('.share-button').click(function(){
-  window.prompt("Copy to clipboard: Ctrl+C, Enter", "www.fivefeetfashion.github.io");
-});
