@@ -1,22 +1,22 @@
 {
-  "name": "fivefeetfashion.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "fivefeetfashion",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fivefeetfashion/fivefeetfashion.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fivefeetfashion/fivefeetfashion.github.io/issues"
+  "devDependencies": {
+    "react-scripts": "1.0.7"
   },
-  "homepage": "https://github.com/fivefeetfashion/fivefeetfashion.github.io#readme",
-  "dependencies": {
-    "less": "^2.7.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
