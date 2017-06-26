@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import styles from './App.css';
+import React, { Component }   from 'react';
+import logo                   from './logo.svg';
+import Radium                 from 'radium';
+import s                      from './styles.js';
 
 class App extends Component {
   render() {
     return (
-      <div className={styles.App}>
-        <div className={styles.header}>
-          <img src={logo} className={styles.logo} alt="logo" />
+      <div style={s.App}>
+        <div style={s.header}>
+          <img src={logo} style={s.logo}alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className={styles.intro}>
+        <p style={s.intro}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
@@ -18,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Radium(App);
