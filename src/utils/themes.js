@@ -1,17 +1,27 @@
-const color = {
+const colors = {
     lightBackGround     : "#eeeeee",
-    secondaryColor      : "hsla(338, 78%, 48%)",
-    primaryColor        : "hsla(340, 82%, 52%, 1)",
-
+    secondaryColor      : "#222222",
+    primaryColor        : "hsl(340, 82%, 52%)",
 };
 
-const width = {
+const dimensions = {
     laptop              : "1025px",
     sidebar_width       : "250px",
-    sidebar_height      : "30vh"
+    sidebar_height      : "30vh",
+};
+
+const fonts = {
+    openSans            : '"Open Sans", sans-serif',
+    roboto              : '"Roboto", sans-serif',
+}
+
+const border = {
+    radius              : '3px',
 }
 
 export default {
-    color,
-    width,
+    colors,
+    dimensions,
+    fonts,
+    border,
 };

@@ -1,20 +1,14 @@
-import React, { Component }   from 'react';
-import logo                   from './logo.svg';
-import Radium                 from 'radium';
-import s                      from './styles.js';
+import React, { Component }         from 'react';
+import Radium, {StyleRoot}          from 'radium';
+import Components                   from './components';
 
 class App extends Component {
   render() {
+    const { Navbar } = Components;
     return (
-      <div style={s.App}>
-        <div style={s.header}>
-          <img src={logo} style={s.logo}alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p style={s.intro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <StyleRoot>
+        <Navbar />
+      </StyleRoot>
     );
   }
 }
