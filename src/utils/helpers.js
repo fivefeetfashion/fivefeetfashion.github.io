@@ -22,9 +22,22 @@ const lightTextColor = (alpha) => (
     `hsla(255, 100%, 100%, ${alpha})`
 );     
 
+const itemsMiddle = () => (
+    `
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    `
+)
+
 export {
     FlexContainer,
     primaryColor,
     secondaryColor,
-    lightTextColor
+    lightTextColor,
+    itemsMiddle
 };

@@ -1,6 +1,6 @@
-import styled   from 'styled-components';
-import theme    from '../../../utils/themes.js';
-import { primaryColor }    from '../../../utils/helpers.js';
+import styled               from 'styled-components';
+import theme                from '../../utils/themes.js';
+import { primaryColor }     from '../../utils/helpers.js';
 
 
 const Logo = styled.div`
