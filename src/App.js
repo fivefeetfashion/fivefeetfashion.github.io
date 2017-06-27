@@ -1,16 +1,10 @@
 import React, { Component }         from 'react';
-import Radium, {StyleRoot}          from 'radium';
-import Components                   from './components';
+import { NavbarContainer }          from './components';
 
-class App extends Component {
+export default class App extends Component {
   render() {
-    const { Navbar } = Components;
     return (
-      <StyleRoot>
-        <Navbar />
-      </StyleRoot>
+        <NavbarContainer />
     );
   }
 }
-
-export default Radium(App);

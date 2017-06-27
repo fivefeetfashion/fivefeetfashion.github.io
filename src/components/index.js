@@ -1,9 +1,7 @@
-import Navbar from './Navbar';
+import NavbarContainer from './NavbarContainer';
 import ContentContainer from './ContentContainer';
 
-const Components = {
-    Navbar,
+export {
+    NavbarContainer,
     ContentContainer,
 };
-
-export default Components;

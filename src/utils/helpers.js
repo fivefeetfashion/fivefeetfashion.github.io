@@ -1,37 +1,30 @@
-import themes from './themes.js';
+import theme    from './themes.js';
+import styled   from 'styled-components';
 
-const helpers = {
-    minWidthLaptop              : '@media screen and (min-width: 1025px)',
-    maxWidthLaptop              : '@media screen and (max-width: 1024px)',
-    
-    flexContainer: {
-        display                 : 'flex',
-        flexDirection           : 'row',
+const FlexContainer = styled.div`
+    display             : flex;
+    flex-direction      : row;
 
-        [`@media (min-width: ${themes.dimensions.laptop})`]: {
-            flexDirection       : 'column'       
-        }
-    },
+    @media (min-width: ${theme.dimensions.laptop}) {
+        flex-direction  : column;
+    } 
+`;
 
-    cardWidth: {
-        width                   : '90vw',
+const primaryColor = (alpha) => (
+    `hsla(338, 78%, 48%, ${alpha})`
+);
 
-        [this.minWidthLaptop]: {
-            width               : '65vw'
-        }
-    },
+const secondaryColor = (alpha) => (
+    `hsla(0, 0%, 0%, ${alpha})`
+);
 
-    centerItems: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
+const lightTextColor = (alpha) => (
+    `hsla(255, 100%, 100%, ${alpha})`
+);     
 
-    primaryBackground : (alpha) => (
-        {
-            background: `hsla(338, 78%, 48%, ${alpha})`
-        }
-    ),
+export {
+    FlexContainer,
+    primaryColor,
+    secondaryColor,
+    lightTextColor
 };
-
-export default helpers;
