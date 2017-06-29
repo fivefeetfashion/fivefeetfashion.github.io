@@ -1,7 +1,7 @@
 import { FlexContainer, media }    from '../utils/helpers.js';
 
 const Navbar = FlexContainer.extend`
-    background          : ${props => props.theme.secColor(0.85)};
+    background          : ${props => props.theme.secColor(0.87)};
     height              : ${props => props.theme.dim.sb_h};
     min-height          : 160px;
     flex-wrap           : none;

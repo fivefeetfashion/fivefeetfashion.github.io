@@ -44,8 +44,17 @@ const itemsMiddle = () => (
     `
 );
 
+const CardWidth = styled.div`
+    width: 90vw;
+
+    ${media.minLaptop`
+        width: 65vw;
+    `}
+`;
+
 export {
     FlexContainer,
     itemsMiddle,
-    media
+    media,
+    CardWidth
 };

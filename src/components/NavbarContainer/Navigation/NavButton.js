@@ -7,7 +7,7 @@ const NavButton = styled.button`
     margin      : 0 5px;
     border      : none;
     outline     : none;
-    background  : ${(props) => props.active ? props.theme.lightColor(1) : props.theme.secColor(0.2)};
+    background  : ${(props) => props.active ? props.theme.bg : props.theme.secColor(0.2)};
     color       : ${(props) => props.active ?  props.theme.secColor(0.8) : props.theme.lightColor(0.8)};
 
     &:hover {
@@ -19,7 +19,7 @@ const NavButton = styled.button`
     }
 
     ${media.minLaptop`
-        background  : ${(props) => props.active ? props.theme.lightColor(1) : props.theme.secColor(0)};
+        background  : ${(props) => props.active ? props.theme.bg : props.theme.secColor(0)};
         align-self      : stretch;
         margin          : 0;
         padding         : 0;
