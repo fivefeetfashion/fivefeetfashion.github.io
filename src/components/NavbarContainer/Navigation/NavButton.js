@@ -1,6 +1,5 @@
-import styled           from 'styled-components';
-import * as helpers     from '../../../utils/helpers.js';
-import theme            from '../../../utils/themes.js';
+import styled                                       from 'styled-components';
+import { media }     from '../../utils/helpers.js';
 
 const NavButton = styled.button`
     cursor      : pointer;
@@ -8,27 +7,28 @@ const NavButton = styled.button`
     margin      : 0 5px;
     border      : none;
     outline     : none;
-    background  : ${(props) => props.active ? helpers.lightTextColor(1) : helpers.secondaryColor(0.2)};
-    color       : ${(props) => props.active ?  helpers.secondaryColor(0.8) : helpers.lightTextColor(0.8)};
+    background  : ${(props) => props.active ? props.theme.lightColor(1) : props.theme.secColor(0.2)};
+    color       : ${(props) => props.active ?  props.theme.secColor(0.8) : props.theme.lightColor(0.8)};
 
     &:hover {
             ${(props) => {
                 if(!props.active) {
-                    return `background : ${helpers.secondaryColor(0.3)};`;
+                    return `background : ${props => props.theme.secColor(0.3)};`;
                 }
             }}
     }
 
-    @media (min-width: ${theme.dimensions.laptop}) {
-        background  : ${(props) => props.active ? helpers.lightTextColor(1) : helpers.secondaryColor(0)};
+    ${media.minLaptop`
+        background  : ${(props) => props.active ? props.theme.lightColor(1) : props.theme.secColor(0)};
         align-self      : stretch;
         margin          : 0;
         padding         : 0;
-    }
+    `}
 
     > h4 {
         text-align  : center;
-        padding     : 10px 10px;
+        padding     : 10px;
+        margin      : 5px;
     }
 `;
 

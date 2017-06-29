@@ -1,21 +1,23 @@
-import theme                from '../../utils/themes.js';
-import { FlexContainer }    from '../../utils/helpers.js';
+import { FlexContainer, media }    from '../utils/helpers.js';
 
 const Navbar = FlexContainer.extend`
-    background          : ${theme.colors.secondaryColor};
-    height              : ${theme.dimensions.sidebar_height};
+    background          : ${props => props.theme.secColor(0.85)};
+    height              : ${props => props.theme.dim.sb_h};
     min-height          : 160px;
     flex-wrap           : none;
+    align-items         : center;
+    justify-content     : space-between;
 
-    @media (min-width: ${theme.dimensions.laptop}) {
+    ${media.minLaptop`
         position        : fixed;
         top             : 0;
         bottom          : 0;
-        width           : ${theme.dimensions.sidebar_width};
+        width           : ${props => props.theme.dim.sb_w};
         height          : 100vh;
         min-height      : 600px;
         justify-content : flex-start
+        `
     } 
-`;
+`;   
 
 export default Navbar;

@@ -1,21 +1,18 @@
-import styled               from 'styled-components';
-import { FlexContainer }    from '../../../utils/helpers.js';
-import theme                from '../../../utils/themes.js';
+import { FlexContainer, media }     from '../../utils/helpers.js';
 
-
-const ShareButtonContainer = FlexContainer.extend`
+const FollowButtonContainer = FlexContainer.extend`
     justify-content     : center;
-    align-self          : center;
+    align-self          : center;    
+    margin-top          : 30px;
 
-    @media (max-width = ${theme.dimensions.laptop}) {
+   ${media.minLaptop`
         margin-top      : 40px;
-    }
-    @media (min-width = 1024px) {
+    `}
+
+    ${media.maxLaptop`
         top             : 0;
         position        : absolute;
-        margin-top      : 30px;
-    }
-
+    `}
 `;
 
-export default ShareButtonContainer;
+export default FollowButtonContainer;
