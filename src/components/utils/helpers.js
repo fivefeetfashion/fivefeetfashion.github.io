@@ -44,6 +44,7 @@ const itemsMiddle = () => (
     `
 );
 
+//Component that spans the width of a card
 const CardWidth = styled.div`
     width: 90vw;
 
