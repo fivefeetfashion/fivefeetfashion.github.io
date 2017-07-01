@@ -4,7 +4,7 @@ const BlogPost = styled.div`
     min-height          : 100vh;
     margin              : 0 auto;
     color               : ${props => props.theme.primColor(0.8)};
-    
+
     > h1 {
         text-align      : center;
         margin          : 0;
@@ -16,7 +16,9 @@ const BlogPost = styled.div`
     }
 
     > img {
+        display         : block;
         max-height      : 80vh;
+        margin          : 20px auto;
     }
 
     > a {

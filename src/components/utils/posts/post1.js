@@ -35,7 +35,7 @@ const post1 = {
     url: "/img/post1/6.jpg",
   }, {
     type: "h4",
-    text: "<br><br>Outfit Details-"
+    text: "Outfit Details-"
   }, {
     type: "text",
     text: "Top- Forever 21 <br>Palazzo - Fabindia <br>earings - Delhi Haat <br>clutch and sandals - Janpath"

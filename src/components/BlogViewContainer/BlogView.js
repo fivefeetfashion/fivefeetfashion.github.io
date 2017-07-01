@@ -3,27 +3,28 @@ import { media }    from '../utils/helpers.js';
 
 const BlogView = styled.div`
     height          : auto;
-    padding-bottom  : 30vh; 
+    position        : fixed;
+    top             : 0;
+    bottom          : 0;
+    left            : 0;
+    right           : 0;
+    overflow        : auto;
+    background      : white;
+    padding-top     : 50px;
 
     ${media.minLaptop`
         margin-left     : ${props => props.theme.dim.sb_w};
-        padding         : 0;
-        position        : absolute;
-        top             : 0;
-        bottom          : 0;
-        left            : 0;
-        right           : 0;
-        overflow        : auto;
+        padding-top     : 0;
     `}
 `;
 
 const PostContainer = styled.div`
-    margin      : 0 auto;
-    width       : 70%;
+    margin          : 0 auto;
+    width           : 80%;
 
     ${media.maxLaptop`
-        position    : relative;
-        width       : 90%;
+        position        : relative;
+        width           : 90%;
     `}
 `;
 
