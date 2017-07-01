@@ -1,7 +1,8 @@
 import React, { Component }         from 'react';
 import { ThemeProvider }            from 'styled-components';
 import { NavbarContainer, 
-        ContentContainer }          from './components';
+        ContentContainer,
+        BlogViewContainer }         from './components';
 import theme                        from './constants/themes.js';
 
 export default class App extends Component {
@@ -10,7 +11,7 @@ export default class App extends Component {
         <ThemeProvider theme={theme.mainTheme}>
           <div>
             <NavbarContainer />
-            <ContentContainer />
+            <BlogViewContainer />
           </div>  
         </ThemeProvider>
     );
