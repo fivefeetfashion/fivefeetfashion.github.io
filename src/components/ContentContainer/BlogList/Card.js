@@ -1,9 +1,10 @@
-import { CardWidth, media } from '../../utils/helpers.js';
+import { media }    from '../../utils/helpers.js';
+import styled       from 'styled-components';
 
-const Card = CardWidth.extend`
+const Card = styled.div`
     display         : inline-block;
     cursor          : pointer;
-
+    
     &:hover {
         > h4 { 
             > span {

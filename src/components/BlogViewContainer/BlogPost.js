@@ -19,6 +19,7 @@ const BlogPost = styled.div`
         display         : block;
         max-height      : 80vh;
         margin          : 20px auto;
+        max-width       : 100%;
     }
 
     > a {

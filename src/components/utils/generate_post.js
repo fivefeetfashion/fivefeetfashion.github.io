@@ -1,7 +1,34 @@
+import React from 'react';
 import Posts from './posts';
 
+
+function parsePost(post) {
+    let blogPost = [];
+    blogPost.push( <h1 key={"h1" + 0}> {post.title} </h1>);
+
+    blogPost.push(
+        post.data.map((item, index) => {
+            if(item.type === "text") {
+                return <p dangerouslySetInnerHTML={ {__html : item.text}} key={"p" + index} />;
+
+            } else if(item.type === "img") {
+                return <img src={process.env.PUBLIC_URL + item.url} alt={"image" + index} key={"img" + index}/>;
+            
+            } else if(item.type === "h3") {
+                return <h3 dangerouslySetInnerHTML={ {__html : item.text}} key={"h3" + index} />;
+            
+            } else if(item.type === "h4") {
+                return <h4 dangerouslySetInnerHTML={ {__html : item.text}} key={"h4" + index} />;
+            } else {
+                return "";
+            }  
+        })
+    );
+    return blogPost;
+}
+
 const getAbout = () => {
-    return Posts.about;
+    return parsePost(Posts.about);
 };
 
 function getFirstImage(data) {
@@ -35,14 +62,14 @@ const getBlogList = () => {
 }; 
 
 const getBlurb = () => {
-    return Posts.blurb;
+    return Posts.blurb.data[0].text;
 };
 
 const getPost = (index) => {
     if(index >= Posts.posts.length) {
         return undefined;
     }
-    return Posts.posts[index];
+    return parsePost(Posts.posts[index]);
 };
 
 export {
