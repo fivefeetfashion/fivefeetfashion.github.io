@@ -12,7 +12,7 @@ export default function Home() {
                 <h4>
                     {getBlurb()}
                     <br/>
-                    Wanna know more about how i got started? visit my <Link to='/about'>about</Link> page.
+                    Want to know more about how I got started? Visit my <Link to='/about'>about</Link> page.
                 </h4>    
             </Blurb>
             <BlogList />

@@ -9,10 +9,27 @@ const BlogPost = styled.div`
         text-align      : center;
         margin          : 0;
         margin-bottom   : 30px;
+        font-weight     : 800;
+        font-size       : 3em;
+    }
+
+    > h3 {
+        font-weight     : 600;
+        font-size       : 1.8em;
+        margin-top      : 30px;
+    }
+
+    > h4 {
+        font-weight     : 500;
+        font-size       : 1.5em;
+        margin-bottom   : 5px;
     }
 
     > p {
         color           : ${props => props.theme.secColor(0.7)};
+        font-weight     : 400;
+        font-size       : 1.1em;
+        line-height     : 1.5em;
     }
 
     > img {

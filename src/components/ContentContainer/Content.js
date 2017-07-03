@@ -5,7 +5,7 @@ const Content = styled.div`
     height          : auto;
     text-align      : center;
     margin          : 0 auto;
-    padding-bottom  : 20vh;
+    padding-bottom  : 10vh;
     
     ${media.minLaptop`
         margin-left     : ${props => props.theme.dim.sb_w};

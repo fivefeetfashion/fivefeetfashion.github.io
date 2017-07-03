@@ -29,6 +29,7 @@ const NavButton = styled.button`
         text-align  : center;
         padding     : 10px;
         margin      : 5px;
+        font-size   : 1.2em;
     }
 `;
 
