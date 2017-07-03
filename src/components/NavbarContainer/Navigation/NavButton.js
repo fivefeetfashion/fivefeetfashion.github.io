@@ -2,6 +2,7 @@ import styled                                       from 'styled-components';
 import { media }     from '../../utils/helpers.js';
 
 const NavButton = styled.button`
+    transition  : all 0.3s ease 0.2s;
     cursor      : pointer;
     align-self  : center;
     margin      : 0 5px;

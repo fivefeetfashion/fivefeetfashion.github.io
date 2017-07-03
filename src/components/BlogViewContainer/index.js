@@ -1,5 +1,6 @@
 import React, { Component }             from 'react';
 import { Link }                         from 'react-router-dom'
+import ReactCSSTransitionGroup          from 'react-addons-css-transition-group';
 
 import { BlogView, PostContainer }      from './BlogView';
 import BlogPost                         from './BlogPost';
@@ -26,23 +27,30 @@ export default class BlogViewContainer extends Component {
     }
     render() {
         return (
-            <BlogView>
-                <Header /> 
-                    <Link to='/'>
-                        <CloseButton> X </CloseButton>
-                    </Link>
-                    <ShareButton>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffivefeetfashion.github.io%2F&amp;src=sdkpreparse"
-                        target="_blank" rel="noreferrer noopener">
-                            <i className="icon-forward">&#xe801;</i>
-                        </a>   
-                    </ShareButton>
-                <PostContainer>
-                    <BlogPost>
-                        {this.blogPost}    
-                    </BlogPost>
-                </PostContainer>
-            </BlogView>  
+            <ReactCSSTransitionGroup
+            transitionName="example"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}>
+                <BlogView key='1'>
+                    <Header /> 
+                        <Link to='/'>
+                            <CloseButton> X </CloseButton>
+                        </Link>
+                        <ShareButton>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffivefeetfashion.github.io%2F&amp;src=sdkpreparse"
+                            target="_blank" rel="noreferrer noopener">
+                                <i className="icon-forward">&#xe801;</i>
+                            </a>   
+                        </ShareButton>
+                    <PostContainer>
+                        <BlogPost>
+                            {this.blogPost}    
+                        </BlogPost>
+                    </PostContainer>
+                </BlogView>  
+            </ReactCSSTransitionGroup>
         );
     }
 };

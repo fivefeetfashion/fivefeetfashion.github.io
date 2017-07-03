@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
         <ThemeProvider theme={theme.mainTheme}>
-          <BrowserRouter forceRefresh={false}>
+          <BrowserRouter>
             <div>
               <Route path="/" component={NavbarContainer}/>
               <Route exact path="/" component={ContentContainer}/>
