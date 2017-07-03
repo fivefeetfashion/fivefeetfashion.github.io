@@ -4,7 +4,6 @@ import ReactCSSTransitionGroup          from 'react-addons-css-transition-group'
 
 import { BlogView, PostContainer }      from './BlogView';
 import BlogPost                         from './BlogPost';
-import Header                           from '../Header';
 import { CloseButton, ShareButton }     from './FixedButton';
 import { getPost }            from '../utils/generate_post.js'
 
