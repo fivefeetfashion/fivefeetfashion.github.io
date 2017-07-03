@@ -11,22 +11,22 @@ export default class ContentContainer extends Component {
     render() {
         
         return(
-            <ReactCSSTransitionGroup
-            transitionName="example"
-            transitionAppear={true}
-            transitionAppearTimeout={500}
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={300}>
-                <Content>
-                    <Header />
-                    <CardWidth>
-                        <Switch>
-                            <Route exact path='/' component={Home} />
-                            <Route exact path='/About' component={About} />
-                        </Switch>
-                    </CardWidth>
-                </Content>
-            </ReactCSSTransitionGroup>    
+            <Content>
+                <Header />
+                <ReactCSSTransitionGroup
+                transitionName="example"
+                transitionAppear={true}
+                transitionAppearTimeout={500}
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={300}>
+                <CardWidth>
+                    <Switch>
+                        <Route exact path='/' component={Home} />
+                        <Route exact path='/About' component={About} />
+                    </Switch>
+                </CardWidth>
+                </ReactCSSTransitionGroup>    
+            </Content>
         )
     }
 }   

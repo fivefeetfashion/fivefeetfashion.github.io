@@ -9,12 +9,12 @@ const BlogPost = styled.div`
         text-align      : center;
         margin          : 0;
         margin-bottom   : 30px;
-        font-weight     : 800;
+        font-weight     : 500;
         font-size       : 3em;
     }
 
     > h3 {
-        font-weight     : 600;
+        font-weight     : 500;
         font-size       : 1.8em;
         margin-top      : 30px;
     }
